@@ -1,0 +1,115 @@
+/* 
+Theme Name: myTheme
+Text Domain: myTheme
+Version: 1.0
+Description: myTheme
+Tags: responsive, myTheme
+Author: me
+Author URI: https://youtube.com/
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+#hero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .hero-img {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+#hero nav {
+  padding: 2rem ;
+}
+#logo {
+  max-width: 220px;
+}
+#hero .title-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: 0 10%;
+    padding: 2rem;
+}
+#hero .title-container h2{
+    color: #1B365F;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.main-content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-content{
+    width: 80%;
+    height: 40vh;
+    background-color: white;
+    text-align: center;
+    padding:2rem 10rem;
+}
+
+.main-content p{
+    margin: 24px 0px 34px;
+}
+
+#about{
+  padding: 24px 0px 0px;
+}
+
+#about .about-container{
+  display: flex;
+  justify-content: center;
+}
+#about .about-container .about-content h4{
+  color: var(--blue_dark);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+
+@media (max-width: 765px) {
+  #hero .hero-img {
+    position: static;
+    object-fit: contain;
+    z-index: 0;
+  }
+}
+@media (max-width: 1060px) {
+    #hero .title-container{
+        margin: 0;
+    }
+    .main-content{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        padding:1rem;
+    }
+    .main-content p{
+        margin: 0;
+        padding: 0 1rem;
+    }
+}
+
